@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://th.bing.com/th/id/OIP.hoGqFSLKoJaiXoBCWxsRMQHaE5?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .poster {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 10vw; /* Dynamically scale text to fit screen */
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase; /* Make all letters uppercase */
+  }
+  
+  .letter {
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  .letter:hover {
+    transform: scale(1.3);
+  }
+  
+  .space {
+    display: inline-block;
+    width: 10px; /* Space between words */
+  }
