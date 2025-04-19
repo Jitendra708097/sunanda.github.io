@@ -5,37 +5,65 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://th.bing.com/th/id/OIP.hoGqFSLKoJaiXoBCWxsRMQHaE5?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+    background: url('https://2.bp.blogspot.com/-KJHvbsgBXO0/W7YOFWsJ37I/AAAAAAAAL9o/IAD_bWjKch4jaOgvdNJZC_fbiXy-YrcegCLcBGAs/s1600/Sunanda-Sharma-Pics.jpg') no-repeat center center/cover;
     font-family: 'Arial', sans-serif;
+    overflow: hidden;
   }
   
   .poster {
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0,.5);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   }
   
   h1 {
-    font-size: 10vw; /* Dynamically scale text to fit screen */
+    font-size: 9vw; /* Dynamically scale text to fit screen */
     line-height: 1.2;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    text-transform: uppercase; /* Make all letters uppercase */
+    text-transform:uppercase; /*Make all letters uppercase*/
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
   }
   
   .letter {
     font-weight: bold;
     display: inline-block;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+    cursor: pointer;
   }
   
   .letter:hover {
-    transform: scale(1.3);
+    transform: scale(1.5) rotate(15deg);
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF5733, 0 0 50px #FF5733;
+    color: #FFD700; /* Change color on hover */
   }
   
   .space {
     display: inline-block;
     width: 10px; /* Space between words */
+  }
+  
+  /* Add subtle background animations */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    animation: pulse 10s infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
   }
